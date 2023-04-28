@@ -1,10 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { JournalApp } from './JournalApp.jsx'
-import './styles.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+import { JournalApp } from "./JournalApp.jsx";
+import "./styles.css";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <JournalApp />
-  </React.StrictMode>,
-)
+    <BrowserRouter>
+      <JournalApp />
+    </BrowserRouter>
+  </React.StrictMode>
+);
