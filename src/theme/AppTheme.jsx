@@ -5,6 +5,7 @@ import { CssBaseline } from '@mui/material';
 import { myTheme } from './';
 
 
+// eslint-disable-next-line react/prop-types
 export const AppTheme = ({ children }) => {
   return (
     <ThemeProvider theme={ myTheme }>
